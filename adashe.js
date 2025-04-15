@@ -1,13 +1,12 @@
 // NUMBER1 PALINDROME STRINS
 
-function printPalindromePattern(str, lines) {
-    for (let i = 1; i <= lines; i++) {
-      let pattern = str.repeat(i);
-      console.log(pattern);
-    }
-  }
-  
-  printPalindromePattern("pork", 4);
+function isPalindrome(word) {
+  const reversed = word.split('').reverse().join('');
+  return word === reversed;
+}
+
+// console.log(isPalindrome("racecar")); 
+// console.log(isPalindrome("pork"));   
 
 //   NUMBER 2 
 let numbers = [1, 2, 100, -1];
@@ -93,10 +92,12 @@ console.log("New array:", multipliedByThree);
 
 // NUMBER 8
 let arrOfnumbers = [10, 20, 30, 40, 50];
+for (let i= 0;i < arrOfnumbers.length;i++){
+    console.log("OUTPUT",i,arrOfnumbers[i]);
+}
 
-numbers.forEach((value, index) => {
-  console.log(`Index of ${value} is ${index}`);
-});
+
+
 
 
 
@@ -134,10 +135,7 @@ function addMember(name, amount) {
   addMember("Tamie Pure", 400)
   console.log('AFTER ADDING NEW MEMBERS',adashe);
   
-  // Get a member by name
-  function getMember(name) {
-    return adashe.find(member => member.name === name);
-  }
+  
   
   // Add to a member's amount
   function deposit(name, amount) {
@@ -179,5 +177,15 @@ function addMember(name, amount) {
   }
   removeMember("Toms Jana")
   console.log('AFTER REMOVING A MEMBER',adashe);
+
+
+
+  // Get a member by name
+  function getMember(name) {
+    return adashe.find(member => member.name === name);
+  }
+  getMember("Nenpez Enrit")
+  console.log("GET MEMBER",adashe);
   
   
+//   git@github.com:Golponer9215/js-assignment3.git
